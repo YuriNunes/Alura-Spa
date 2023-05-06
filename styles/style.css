@@ -1,0 +1,272 @@
+html, body {
+  font-family: "Gruppo", cursive;
+  background-color: #E5D9B6;
+}
+
+nav {
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  padding: 1.5em;
+}
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #285430;
+}
+nav ul li a:hover {
+  border-bottom: 2px solid #285430;
+}
+
+.banner {
+  background: url(/imagens/banner.jpeg) 27% center no-repeat;
+  min-height: 350px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+}
+.banner .inner-banner {
+  padding: 4rem;
+  background-color: #ECA869;
+  border-radius: 45px;
+  opacity: 0.9;
+  color: #285430;
+  font-family: "Satisfy", cursive;
+  text-align: center;
+}
+.banner .inner-banner h1 {
+  font-size: 5rem;
+  opacity: 0.9;
+}
+.banner .inner-banner h2 {
+  font-size: 2rem;
+}
+
+#servico {
+  margin: 80px;
+}
+#servico h3 {
+  font-family: "Gruppo", cursive;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #285430;
+}
+#servico h4 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #285430;
+  margin-bottom: 40px;
+}
+#servico .cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+#servico .cards .card {
+  width: 450px;
+  text-align: center;
+}
+#servico .cards .card h5 {
+  font-size: 1.5rem;
+  color: #285430;
+}
+#servico .cards .card p {
+  font-size: 1rem;
+  color: #285430;
+  line-height: 1.25rem;
+}
+#servico .cards .card .img-container {
+  padding-bottom: 2px;
+  border-bottom: 3px solid #285430;
+}
+#servico .cards .card .img-container img {
+  max-width: 100%;
+}
+
+#cupom {
+  background-color: #285430;
+  padding: 3em;
+  opacity: 0.9;
+  text-align: center;
+}
+#cupom .txt {
+  color: #E5D9B6;
+}
+#cupom .txt h2 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+#cupom .input {
+  margin: 0 auto;
+  width: 500px;
+  border-radius: 20px;
+  border: 4px solid #E5D9B6;
+  background: #E5D9B6;
+}
+#cupom .input input {
+  border-radius: 20px;
+  height: 40px;
+  border: none;
+  width: 465px;
+  outline: none;
+  background-color: #E5D9B6;
+  text-align: center;
+  color: #285430;
+  font-family: "Gruppo", cursive;
+  font-size: 1.5rem;
+}
+#cupom .input:hover, #cupom .input:focus-within {
+  box-shadow: 1px 1px 8px 1px #ECA869;
+  outline: none;
+}
+#cupom button {
+  margin-top: 1rem;
+  position: relative;
+  font-family: "Gruppo", cursive;
+  padding: 5px 45px;
+  background: #285430;
+  font-size: 17px;
+  color: #E5D9B6;
+  border: 1px solid #285430;
+  border-radius: 30px;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2));
+}
+#cupom button:hover {
+  border: 1px solid #E5D9B6;
+  background: #E5D9B6;
+  color: #285430;
+  animation: wind 2s ease-in-out infinite;
+}
+@keyframes wind {
+  0% {
+    background-position: 0% 50%;
+  }
+  0% {
+    background-position: 50% 100%;
+  }
+  0% {
+    background-position: 0% 50%;
+  }
+}
+#cupom .icon-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  transform-origin: 0 0;
+  transform: rotate(10deg);
+  transition: all 0.5s ease-in-out;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.3));
+}
+#cupom button:hover .icon-1 {
+  animation: slay-1 3s cubic-bezier(0.52, 0, 0.58, 1) infinite;
+  transform: rotate(10deg);
+}
+@keyframes slay-1 {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+#cupom .icon-2 {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  width: 12px;
+  transform-origin: 50% 0;
+  transform: rotate(10deg);
+  transition: all 1s ease-in-out;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
+}
+#cupom button:hover .icon-2 {
+  animation: slay-2 3s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
+  transform: rotate(0);
+}
+@keyframes slay-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+#cupom .icon-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  transform-origin: 50% 0;
+  transform: rotate(-5deg);
+  transition: all 1s ease-in-out;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
+}
+#cupom button:hover .icon-3 {
+  animation: slay-3 2s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
+  transform: rotate(0);
+}
+@keyframes slay-3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+footer {
+  text-align: center;
+  font-size: 1rem;
+  border-top: 2px solid #285430;
+  margin-top: 1rem;
+  padding: 1rem;
+  color: #285430;
+}
+
+#ban-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0 40px 0;
+  padding: 1rem;
+}
+#ban-container .txt2 h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #285430;
+}
+#ban-container .txt2 h4 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bolder;
+  color: #285430;
+}
+#ban-container .txt2 p {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bolder;
+  color: #285430;
+}
+#ban-container .img {
+  padding-bottom: 5px;
+}
+#ban-container .img img {
+  max-width: 100%;
+  border-radius: 30px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,36 @@
+@import '..//variaveis';
+
+#ban-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0 40px 0;
+    padding: 1rem;
+    .txt2{
+        h3{
+            text-align: center;
+            font-size: 1.5rem; 
+            font-weight: bold;
+            color: $cor-secundaria;       
+        }
+        h4{
+            text-align: center;
+            font-size: 1rem;
+            font-weight: bolder;
+            color: $cor-secundaria;
+        }
+        p{
+            text-align: center;
+            font-size: 1rem;
+            font-weight: bolder;
+            color: $cor-secundaria;
+        }
+    }
+    .img{
+        padding-bottom: 5px;
+        img{
+            max-width: 100%;
+            border-radius: 30px;
+        }
+    }
+}

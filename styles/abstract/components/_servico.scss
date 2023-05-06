@@ -1,0 +1,43 @@
+@import '../variaveis';
+
+#servico{
+    margin: 80px;
+    h3{
+        font-family: $fonte-principal;
+        font-size: 1.5rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: $cor-secundaria;
+    }
+    h4{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 2rem;
+        color: $cor-secundaria;
+        margin-bottom: 40px;
+    }
+    .cards{
+        display: flex;
+        justify-content: space-evenly;
+        .card{
+            width: 450px;
+            text-align: center;
+            h5{
+                font-size: 1.5rem;
+                color: $cor-secundaria;
+            }
+            p{
+                font-size: 1rem;
+                color: $cor-secundaria;
+                line-height: 1.25rem;
+            }
+            .img-container{
+                padding-bottom: 2px;
+                border-bottom: 3px solid $cor-secundaria;
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

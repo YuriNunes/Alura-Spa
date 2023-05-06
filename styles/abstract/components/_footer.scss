@@ -1,0 +1,10 @@
+@import '../variaveis';
+
+footer{
+    text-align: center;
+    font-size: 1rem;
+    border-top: 2px solid $cor-secundaria;
+    margin-top: 1rem;
+    padding: 1rem;
+    color: $cor-secundaria;
+}
